@@ -89,4 +89,75 @@ header nav .icons button img {
   width: 55REM;
   height: 68.6rem;
   border-radius: 1.9rem;
+}
+
+.product-section {
+  width: 100%;
+  height: auto;
+  padding: 6rem;
+}
+.product-section h2 {
+  color: #7C6A0A;
+  font-size: 3rem;
+}
+.product-section .healthcare, .product-section .furniture {
+  margin-block-end: 7.3rem;
+}
+.product-section .healthcare h2, .product-section .furniture h2 {
+  margin-block-end: 6rem;
+}
+.product-section .healthcare .card-section, .product-section .furniture .card-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 16rem;
+       column-gap: 16rem;
+  row-gap: 7.5rem;
+  flex-wrap: wrap;
+}
+.product-section .healthcare .card-section .product-card, .product-section .furniture .card-section .product-card {
+  background: #FFDAC6;
+  width: 32rem;
+  height: 50rem;
+  border-radius: 0.8rem;
+  padding: 1.4rem;
+}
+.product-section .healthcare .card-section .product-card .iconContainer, .product-section .furniture .card-section .product-card .iconContainer {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.product-section .healthcare .card-section .product-card figure, .product-section .furniture .card-section .product-card figure {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-block-start: 1.2rem;
+  color: #7C6A0A;
+}
+.product-section .healthcare .card-section .product-card figure img, .product-section .furniture .card-section .product-card figure img {
+  width: 24rem;
+  height: 30rem;
+  border-radius: 0.65rem;
+  margin-block-end: 1.6rem;
+}
+.product-section .healthcare .card-section .product-card figure div, .product-section .furniture .card-section .product-card figure div {
+  width: 24rem;
+  height: 8rem;
+}
+.product-section .healthcare .card-section .product-card figure div h3, .product-section .furniture .card-section .product-card figure div h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.product-section .healthcare .card-section .product-card figure div p, .product-section .furniture .card-section .product-card figure div p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.95rem;
+}
+.product-section .furniture .card-section .product-card {
+  background-color: #BABD8D;
+}
+.product-section .furniture .card-section .product-card figure {
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
