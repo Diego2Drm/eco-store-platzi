@@ -4,6 +4,13 @@ $tertiary-color: #BABD8D;
 $primary--text-color: #7C6A0A;
 $font-stack: "IBM Plex Sans", sans-serif;
 
+@mixin flexCenter($content,$align,$directio){
+   display: flex;
+   justify-content: $content;
+   align-items: $align;
+}
+
+
 * {
    margin: 0;
    padding: 0;
@@ -23,10 +30,7 @@ header {
 
    nav {
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
+      @include flexCenter(space-between,center);
       p {
          font-size: 3rem;
          font-weight: 400;
