@@ -4,12 +4,17 @@ $tertiary-color: #BABD8D;
 $primary--text-color: #7C6A0A;
 $font-stack: "IBM Plex Sans", sans-serif;
 
-@mixin flexCenter($content,$align,$directio){
+@mixin flexCenter($content, $align) {
    display: flex;
    justify-content: $content;
    align-items: $align;
 }
 
+@mixin textTitle($zise, $bold, $color) {
+   font-size: $zise;
+   font-weight: $bold;
+   color: $color;
+}
 
 * {
    margin: 0;
@@ -30,7 +35,8 @@ header {
 
    nav {
       width: 100%;
-      @include flexCenter(space-between,center, inherit);
+      @include flexCenter(space-between, center);
+
       p {
          font-size: 3rem;
          font-weight: 400;
@@ -126,6 +132,7 @@ header {
 
    .healthcare {
       margin-block-end: 7.3rem;
+
       h2 {
          margin-block-end: 6rem;
       }
@@ -193,7 +200,8 @@ header {
       .card-section {
          .product-card {
             background-color: $tertiary-color;
-            figure{
+
+            figure {
                color: #fff;
             }
          }
@@ -202,31 +210,62 @@ header {
    }
 }
 
-.about-us{
+.about-us {
    padding-inline: 6rem;
-   h2{
+
+   h2 {
       font-size: 3rem;
       font-weight: bold;
       color: $primary--text-color;
    }
-   .about-us-info{
+
+   .about-us-info {
       margin-block-start: 7rem;
-      @include flexCenter(space-evenly,center, inherit);
-      figure{
-         @include flexCenter(inherit, center, center);
+      @include flexCenter(space-evenly, center);
+
+      figure {
+         @include flexCenter(inherit, center);
          column-gap: 2rem;
          width: 40rem;
-         img{
+
+         img {
             width: 14rem;
             height: 14rem;
          }
-         p{
+
+         p {
             font-size: 2rem;
             color: #E86424;
             font-weight: 500;
             line-height: 3.9rem;
             text-align: center;
          }
+      }
+   }
+}
+
+.gallery {
+   padding-top: 20rem;
+   padding-left: 7rem;
+   h2 {
+      @include textTitle(3rem, bold, $primary--text-color)
+   }
+
+   .gallery-imgs {
+      @include flexCenter(inherit, center);
+      margin-block-start: 6.7rem;
+      column-gap: 5.6rem;
+
+      img {
+         width: 40rem;
+         height: 40rem;
+         border-radius: 1.6rem;
+         &:hover{
+            scale: 1.1;
+            transition-duration: 1000ms;
+            transition-timing-function: ease-out;
+         }
+
       }
    }
 }

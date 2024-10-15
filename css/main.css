@@ -194,4 +194,32 @@ header nav .icons button img {
   font-weight: 500;
   line-height: 3.9rem;
   text-align: center;
+}
+
+.gallery {
+  padding-top: 20rem;
+  padding-left: 7rem;
+}
+.gallery h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #7C6A0A;
+}
+.gallery .gallery-imgs {
+  display: flex;
+  justify-content: inherit;
+  align-items: center;
+  margin-block-start: 6.7rem;
+  -moz-column-gap: 5.6rem;
+       column-gap: 5.6rem;
+}
+.gallery .gallery-imgs img {
+  width: 40rem;
+  height: 40rem;
+  border-radius: 1.6rem;
+}
+.gallery .gallery-imgs img:hover {
+  scale: 1.1;
+  transition-duration: 1000ms;
+  transition-timing-function: ease-out;
 }/*# sourceMappingURL=main.css.map */
