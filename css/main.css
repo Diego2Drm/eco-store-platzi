@@ -222,4 +222,37 @@ header nav .icons button img {
   scale: 1.1;
   transition-duration: 1000ms;
   transition-timing-function: ease-out;
+}
+
+.location {
+  padding-top: 12.3rem;
+  padding-left: 7rem;
+}
+.location h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #7C6A0A;
+}
+.location .map {
+  margin-block-start: 6.5rem;
+}
+.location .map img {
+  width: 130rem;
+  height: 60rem;
+  border-radius: 1.6rem;
+  margin-block-end: 5rem;
+}
+.location .map figcaption {
+  color: #E86424;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.location .map figcaption :nth-child(1) {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+.location .map figcaption :nth-child(2) {
+  font-size: 2.5rem;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
