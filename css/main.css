@@ -255,4 +255,42 @@ header nav .icons button img {
 .location .map figcaption :nth-child(2) {
   font-size: 2.5rem;
   font-weight: 400;
+}
+
+footer {
+  width: 100%;
+  height: 46rem;
+  background: #FA9500;
+  margin-block-start: 12.5rem;
+  padding: 4rem 7rem;
+}
+footer h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+footer .list-footer {
+  list-style: none;
+  margin-block-start: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  color: #FFFFFF;
+}
+footer .list-footer li {
+  font-size: 2rem;
+  font-weight: 500;
+}
+footer .social-media {
+  list-style: none;
+  margin-block-start: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+footer .social-media li img {
+  width: 4.5rem;
+  height: 4.5rem;
 }/*# sourceMappingURL=main.css.map */
